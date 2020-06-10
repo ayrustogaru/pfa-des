@@ -69,7 +69,7 @@ bool checkProperty(uint32_t a, int sbox)
     if(j!=4*sbox)
     {
        //change 4 to WORD_SIZE
-      if(aj!=0) return false; // -- fill not a correct xor, start again
+      if(aj!=0) return false; 
     }
     else{
       //temp must be equal to correct sbox entry
@@ -283,7 +283,7 @@ int main()
   int n = 16;
   string pt, key;
 
-  key = "0BF222122231343D";
+  key = "0BF222122231343D"; //change to random key generation
 
   //filestreams for plaintext and ciphertext storage
   ofstream ptout, ctout;
